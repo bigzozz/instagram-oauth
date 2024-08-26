@@ -16,7 +16,8 @@
 
         if (code) {
             // Redirect back to the WinForms app with the authorization code
-            window.location.href = `http://localhost/callback?code=${code}`;
+            //window.location.href = `http://localhost/callback?code=${code}`;
+            window.location.href = `https://www.instagram.com/?code=${code}`;
         } else if (error) {
             document.body.innerHTML = `<p>Error: ${params.get('error_description')}</p>`;
         } else {
